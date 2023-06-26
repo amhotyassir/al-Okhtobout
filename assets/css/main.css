@@ -1653,3 +1653,29 @@ section {
 .footer .credits a {
   color: #fff;
 }
+
+@font-face {
+  font-family: ArabicUIDisplayUltraLight;
+  src: url('../fonts/ArabicUIDisplayUltraLight.otf') format('opentype');
+}
+@font-face {
+  font-family: phalls;
+  src: url('../fonts/ArabicUIDisplayHeavy.otf') format('opentype');
+}
+
+@font-face {
+  font-family: ArslanWessam;
+  src: url('../fonts/ArslanWessam.ttf') format('opentype');
+}
+
+.float-end {
+  float: right;
+}
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+.miniHeaders{
+  font-family: ArabicUIDisplayUltraLight;
+}

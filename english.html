@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<head lang="ar">
+<head>
   <meta charset="UTF-8">
 
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -22,8 +22,7 @@
     rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet' />
   <!-- Downloaded fonts -->
-  
-  
+  <link href="./assets/fonts/ArabicUIDisplayUltraLight.otf" rel="stylesheet" />
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -39,10 +38,16 @@
   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
 
-  
+  <!-- =======================================================
+  * Template Name: Al Okhtobout
+  * Updated: May 30 2023 with Bootstrap v5.3.0
+  * Template URL: https://bootstrapmade.com/Al Okhtobout-bootstrap-restaurant-website-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
 
-<body>
+<body >
   <!-- Language switch script -->
   <script>
 
@@ -55,7 +60,6 @@
       // Spanish text
       if (lang === "es") {
         window.location.href = 'spanish.html';
-        }
       }
 
       // French text
@@ -66,9 +70,8 @@
       // arabic text
       if (lang === "ar") {
         window.location.href = 'index.html';
-
       }
-    
+    }
   </script>
 
   <!-- Firebase -->
@@ -147,43 +150,40 @@
 
   <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top d-flex align-items-center">
-    <div class="container d-flex align-items-center justify-content-between" style="flex-direction: row-reverse;">
+    <div class="container d-flex align-items-center justify-content-between">
 
-        <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0"  style="flex-direction: row-reverse;">
-            <!-- Uncomment the line below if you also wish to use an image logo -->
-            <!-- <img src="assets/img/logo.png" alt=""> -->
-            <img src="assets/img/logoz.png" style="padding-right: 0.3cm;padding-left: 0.3cm;" />
-            <h1 style="font-family: ArslanWessam; font-size: -webkit-xxx-large;font-weight: 400;"><i><span style="color:#34779C">.</span>الأخطبوط</i></h1>
-        </a>
-    
-        <nav id="navbar" class="navbar">
-            <ul  style="flex-direction: row-reverse;">
-                <li><a href="#hero" id="Home">الرئيسية</a></li>
-                <li><a href="#about" id="About">حول</a></li>
-                <li><a href="#menu" id="Menu">القائمة</a></li>
-                <li><a href="#events" id="Events">الأحداث</a></li>
-                <li><a href="#chefs" id="Chefs">الطهاة</a></li>
-                <li><a href="#gallery" id="Gallery">الصور</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropbtn"><span id="Language"><i class="bi bi-globe"></i> Language</span> <i
-                            class="bi bi-chevron-down dropdown-indicator"></i></a>
-                    <ul class="dropdown-content">
-                        <li><a href="#" onclick="changeLanguage('en')">English</a></li>
-                        <li><a href="#" onclick="changeLanguage('es')">Española</a></li>
-                        <li><a href="#" onclick="changeLanguage('fr')">Français</a></li>
-                        <li><a href="#" onclick="changeLanguage('ar')">العربية</a></li>
-                    </ul>
-                </li>
-                <li><a href="#contact" id="Contact">اتصل بنا</a></li>
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0" id="Al-Okhtobout">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <img src="assets/img/logoz.png" style="padding-right: 0.3cm;padding-left: 0.3cm;" />
+        <h1 style="font-family: Caveat;"><i>Al Okhtobout</i><span style="color:#34779C">.</span></h1>
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="#hero" id="Home">Home</a></li>
+          <li><a href="#about" id="About">About</a></li>
+          <li><a href="#menu" id="Menu">Menu</a></li>
+          <li><a href="#events" id="Events">Events</a></li>
+          <li><a href="#chefs" id="Chefs">Chefs</a></li>
+          <li><a href="#gallery" id="Gallery">Gallery</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn"><span id="Language"><i class="bi bi-globe"></i> Language</span> <i
+                class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul class="dropdown-content">
+              <li><a href="#" onclick="changeLanguage('en')">English</a></li>
+              <li><a href="#" onclick="changeLanguage('es')">Española</a></li>
+              <li><a href="#" onclick="changeLanguage('fr')">Français</a></li>
+              <li><a href="#" onclick="changeLanguage('ar')">العربية</a></li>
             </ul>
-        </nav><!-- .navbar -->
-    
-        <a class="btn-book-a-table" href="tel:+212661110860" id="Book">احجز الآن</a>
-        <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
-    
-    </div>
-    
+          </li>
+          <li><a href="#contact" id="Contact">Contact</a></li>
+        </ul>
+      </nav><!-- .navbar -->
+
+      <a class="btn-book-a-table" href="tel:+212661110860" id="Book">Book</a>
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
 
     </div>
   </header><!-- End Header -->
@@ -191,22 +191,26 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="hero d-flex align-items-center section-bg">
     <div class="container">
-      <div class="row justify-content-between gy-5"  style="flex-direction: row-reverse;">
-        <div 
+      <div class="row justify-content-between gy-5">
+        <div
           class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
-          <h2 data-aos="fade-up" class="rtl-text" id="Healthy,Delicious,and-Unforgettable" style="width: 100%; text-align: right;">صحي، لذيذ
-            <br>و<span>لا يُنسى</span></h2>
-          <p data-aos="fade-up" data-aos-delay="100" id="Prepare-yourself-for-an-extraordinary" style="text-align: right;"><b><i style="display:inline-block"  style="text-align: right;"> ! الأخطبوط </i></b> استعد لتجربة غير عادية في مطعم   
-            
-            <br />🌟 تخيل نفسك تستمتع بأطباق مأكولات بحرية لذيذة 🐙، وأنت محاط بمناظر خلابة 🌊 وأجواء دافئة ومرحبة
-            😊.
+          <!-- <img src="assets/img/logoz.png" style="opacity: 70%; background-image: url();"/> -->
+          <!-- <div style="background-image: url('assets/img/logoz.png');background-repeat: no-repeat; background-size: contain; justify-self: center;"> -->
+          <h2 data-aos="fade-up" class="rtl-text" id="Healthy,Delicious,and-Unforgettable" style="width: 100%;">Healthy,
+            Delicious, <br>and <span>Unforgettable</span></h2>
+          <p data-aos="fade-up" data-aos-delay="100" id="Prepare-yourself-for-an-extraordinary">Prepare yourself for an
+            extraordinary experience at <b><i style="display:inline-block">AL Okhtobout !</i></b>
+            <br />🌟 Picture yourself savoring mouthwatering seafood dishes 🐙, surrounded by breathtaking views 🌊 and
+            a warm,
+            welcoming atmosphere 😊.
           </p>
-          <div class="d-flex" data-aos="fade-up" data-aos-delay="200" style="align-self: center;">
+          <!-- </div> -->
+          <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
             <a href="tel:+212661110860" class="btn-book-a-table" style="background-color: #34779C;"
-              id="Book-a-table">احجز الآن</a>
+              id="Book-a-table">Book a Table</a>
             <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ"
               class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span
-                id="Watch-video">شاهد الفيديو</span></a>
+                id="Watch-video">Watch video</span></a>
           </div>
         </div>
         <div class="col-lg-5 order-1 order-lg-2 text-center text-lg-start">
@@ -214,412 +218,438 @@
         </div>
       </div>
     </div>
-  </section>
-  <!-- End Hero Section -->
+  </section><!-- End Hero Section -->
 
   <main id="main">
 
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
       <div class="container" data-aos="fade-up">
-    
+
         <div class="section-header" id="About-us">
-          <h2>تعرف علينا</h2>
-          <p style="font-family: ArabicUIDisplayUltraLight;"> مزيد من <span>المعلومات عنا</span></p>
+          <h2>About Us</h2>
+          <p>Learn More <span>About Us</span></p>
         </div>
-    
+
         <div class="row gy-4">
-          <div class="col-lg-7 position-relative about-img" style="background-image: url(assets/img/about.jpg);"
+          <div class="col-lg-7 position-relative about-img" style="background-image: url(assets/img/about.jpg) ;"
             data-aos="fade-up" data-aos-delay="150">
             <div class="call-us position-absolute">
-              <h4 id="Book-a-table2">احجز الآن</h4>
+              <h4 id="Book-a-table2">Book a Table</h4>
               <p>+212 6611-10860</p>
             </div>
           </div>
           <div class="col-lg-5 d-flex align-items-end" data-aos="fade-up" data-aos-delay="300"
             id="3-elements-of-al-okhtobout">
             <div class="content ps-0 ps-lg-5" id="3-elements-of-al-okhtobout">
-              <p class="fst-italic" style="text-align: right;">
-                3 عناصر في الأخطبوط سترفع تجربة تناول الطعام إلى مستويات جديدة وتجعل تجربتك <strong>ساحرة</strong> ✨
+              <p class="fst-italic">
+                3 elements of Al Okhtobout that will elevate your dining experience to new heights and turn your
+                experience <strong>Magical</strong> ✨
               </p>
-              <ul  style="text-align: right;">
-                <li dir="rtl" style="text-align: right;">✔ أطباق من المأكولات البحرية المتوسطية 🌊🦞 والمطبخ الإسباني، لنقدم لك أعلى مستويات الجودة 🔝 والنكهة المبهرة 😋.</li>
-                <li dir="rtl" style="text-align: right;">✔ تمتع بإطلالة خلابة على البحر 🌊 تمتد أمام عينيك 👀 وتأسرك غروبات الشمس الخلابة 🌅 التي تملأ السماء بلوحة من الألوان الساحرة 🌈.</li>
-                <li dir="rtl" style="text-align: right;">✔ هرب من صخب المدينة واستمتع بالسكينة أثناء تذوق وجبتك الاستثنائية 🍽️، واستمتع بموسيقى الشاطئ الهادئة 🏖️.</li>
+              <ul>
+                <li><i class="bi bi-check2-all"></i> Immerse yourself in the culinary mastery of our combination of 🌊🦞
+                  Mediterranean seafood and Spanish cuisine, delivering the utmost 🔝 quality and captivating 😋 taste.
+                </li>
+                <li><i class="bi bi-check2-all"></i> Marvel at the stunning 🌊 ocean view that stretches before your 👀
+                  eyes and be captivated by the breathtaking 🌅 sunsets that fill the sky with a palette of stunning 🌈
+                  colors.</li>
+                <li><i class="bi bi-check2-all"></i> Escape the city clamor and embrace tranquility as you savor your
+                  exceptional 🍽️ meal, serenaded by the soothing sounds of the 🏖️ beach.</li>
               </ul>
-              <p  dir="rtl" style="text-align: right;">
-                في <b><i id="AlOkhtobout">الأخطبوط</i></b>، فريقنا المخلص ملتزم ليس فقط بتقديم أفضل وجبة لك، ولكن أيضًا
-                بجعل تجربتك <strong>ساحرة</strong>.
+              <p>
+                At <b><i id="AlOkhtobout">Al Okhtobout</i></b>, our dedicated team is committed to, not only provide you
+                with the <strong>best</strong> meal, but also make your experience <strong>magical</strong>.
               </p>
-    
+
               <div class="position-relative mt-4">
                 <img src="assets/img/about-2.jpg" class="img-fluid" alt="">
                 <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox play-btn"></a>
               </div>
             </div>
+
+
           </div>
         </div>
-    
+
       </div>
-    </section>
-    <!-- End About Section -->
+    </section><!-- End About Section -->
 
     <!-- ======= Why Us Section ======= -->
     <section id="why-us" class="why-us section-bg">
       <div class="container" data-aos="fade-up">
-    
-        <div class="row gy-4" id="why-choose-us" style="flex-direction: row-reverse;">
-    
+
+        <div class="row gy-4" id="why-choose-us">
+
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="why-box" style="text-align: right;">
-              <h3>لماذا تختار الأخطبوط ؟</h3>
+            <div class="why-box">
+              <h3>Why Choose Al Okhtobout?</h3>
               <p>
-                استمتع بسحر الأخطبوط 🐙. تذوق مأكولاتنا البحرية اللذيذة 🍤، واستمتع بخدمتنا الودية 😊، واستمتع بموقعنا المطل على الشاطئ 🌊. اصنع ذكريات لا تنسى 🌟 وانطلق في رحلة طهي لا تُنسى 🍽️. اخترنا لتجربة تناول طعام استثنائية.
+                Experience the irresistible charm of 🐙 <b><i id="AlOkhtobout">Al Okhtobout</i></b>. Indulge in our
+                mouthwatering seafood 🍤,
+                friendly service 😊, and beachfront location 🌊. Create cherished memories 🌟 and embark on an
+                unforgettable culinary journey 🍽️. Choose us for an exceptional dining experience.
               </p>
               <div class="text-center">
-                <a href="#" class="more-btn">تعلم المزيد <i class="bx bx-chevron-right"></i></a>
+                <a href="#" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
               </div>
             </div>
           </div><!-- End Why Box -->
-    
+
           <div class="col-lg-8 d-flex align-items-center">
             <div class="row gy-4">
-    
+
               <div class="col-xl-4" data-aos="fade-up" data-aos-delay="200">
                 <div class="icon-box d-flex flex-column justify-content-center align-items-center" id="Quality">
                   <i class="bi bi-check-circle"></i>
-    
-                  <h4>الجودة</h4>
-    
-                  <p>استمتع بنكهات مأكولاتنا البحرية الطازجة والمختارة بعناية، المحضرة بعناية لنكون متميزين في الطعم</p>
+
+                  <h4>Quality</h4>
+
+                  <p> Immerse in flavors of our fresh, hand-selected seafood, meticulously prepared for exceptional
+                    taste
+                  </p>
                 </div>
               </div><!-- End Icon Box -->
-    
+
               <div class="col-xl-4" data-aos="fade-up" data-aos-delay="300">
                 <div class="icon-box d-flex flex-column justify-content-center align-items-center" id="Healthy">
                   <i class="bi bi-gem"></i>
-                  <h4>صحية</h4>
-                  <p>دلل نفسك بخيارات مأكولات بحرية غذائية يتم طهيها بعناية لدعم صحتك</p>
+                  <h4>Healthy</h4>
+                  <p> Treat yourself to nutritious seafood options that are thoughtfully cooked to support your
+                    well-being</p>
                 </div>
               </div><!-- End Icon Box -->
-    
+
               <div class="col-xl-4" data-aos="fade-up" data-aos-delay="400">
                 <div class="icon-box d-flex flex-column justify-content-center align-items-center"
                   id="Home-cooked-like">
                   <i class="bi bi-heart"></i>
-                  <h4>مطبوخة كما في المنزل</h4>
-                  <p>تمتع بوجبات تشبه الطهي في المنزل، محضرة بحب وعناية تشبه الأطباق المفضلة لعائلتك</p>
+                  <h4>Home Cooked-like</h4>
+                  <p>Delight in homemade-style meals, made with love and care, just like your family favorites</p>
                 </div>
               </div><!-- End Icon Box -->
-    
+
             </div>
           </div>
-    
+
         </div>
-    
+
       </div>
-    </section>
-    <!-- End Why Us Section -->
+    </section><!-- End Why Us Section -->
 
     <!-- ======= Stats Counter Section ======= -->
     <section id="stats-counter" class="stats-counter">
       <div class="container" data-aos="zoom-out">
-    
+
         <div class="row gy-4">
-    
+
           <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
               <span data-purecounter-start="0" data-purecounter-end="400" data-purecounter-duration="1"
                 class="purecounter"></span>
-              <p>&lt; العملاء الراضين</p>
+              <p id="Satisfied">&lt; Satisfied Customers</p>
             </div>
           </div><!-- End Stats Item -->
-    
+
           <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
               <span data-purecounter-start="0" data-purecounter-end="8" data-purecounter-duration="1"
                 class="purecounter"></span>
-              <p>&lt; سنوات من الخبرة</p>
+              <p id="Years">&lt; Years of Experience</p>
             </div>
           </div><!-- End Stats Item -->
-    
+
           <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
               <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1"
                 class="purecounter"></span>
-              <p>ساعات في اليوم</p>
+              <p id="Hours">Hours a day</p>
             </div>
           </div><!-- End Stats Item -->
-    
+
           <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
               <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1"
                 class="purecounter"></span>
-              <p>عمال مخلصين</p>
+              <p id="Workers">Dedicated Workers</p>
             </div>
           </div><!-- End Stats Item -->
-    
+
         </div>
-    
+
       </div>
-    </section>
-    <!-- End Stats Counter Section -->
+    </section><!-- End Stats Counter Section -->
 
     <!-- ======= Menu Section ======= -->
     <section id="menu" class="menu">
+      <!-- -->
       <div class="container" data-aos="fade-up">
-    
+
         <div class="section-header" id="menu-header">
-          <h2>قائمتنا</h2>
-          <p style="font-family: ArabicUIDisplayUltraLight;">تحقق من قائمة <span>الأخطبوط</span></p>
+          <h2>Our Menu</h2>
+          <p>Check Our <span>Al Okhtobout Menu</span></p>
         </div>
-    
+
         <ul class="nav nav-tabs d-flex justify-content-center" data-aos="fade-up" data-aos-delay="200">
-    
+
           <li class="nav-item">
             <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-starters">
-              <h4>المقبلات</h4>
+              <h4 id="Starters">Starters</h4>
             </a>
           </li><!-- End tab nav item -->
-    
+
           <li class="nav-item">
             <a class="nav-link active show " data-bs-toggle="tab" data-bs-target="#menu-breakfast">
-              <h4>الأطباق الرئيسية</h4>
+              <h4 id="Main-dishes">Main Dishes</h4>
             </a><!-- End tab nav item -->
-          </li>
-    
+
           <li class="nav-item">
             <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-lunch">
-              <h4>العروض الخاصة</h4>
+              <h4 id="Specials">Specials</h4>
             </a>
           </li><!-- End tab nav item -->
-    
+
           <li class="nav-item">
             <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-dinner">
-              <h4>المشروبات والحلويات</h4>
+              <h4 id="Drinks-Dessert">Drinks & Dessert</h4>
             </a>
           </li><!-- End tab nav item -->
-    
+
         </ul>
-    
+
         <div class="tab-content" data-aos="fade-up" data-aos-delay="300">
-    
+
           <div class="tab-pane fade" id="menu-starters">
-    
-            <div class="tab-header text-center">
-              <p>قائمة</p>
-              <h3>المقبلات</h3>
+
+            <div class="tab-header text-center" id="menu-stt">
+              <p>Menu</p>
+              <h3>Starters</h3>
             </div>
-    
+
             <div class="row gy-5" id="menu-container-starters">
-    
+
+
+
+
             </div>
           </div><!-- End Starter Menu Content -->
-    
-          <div class="tab-pane fade active show" id="menu-breakfast">
-    
-            <div class="tab-header text-center">
-              <p>قائمة</p>
-              <h3>الأطباق الرئيسية</h3>
+
+          <div class=" tab-pane fade active show" id="menu-breakfast">
+
+            <div class="tab-header text-center" id="menu-dish">
+              <p>Menu</p>
+              <h3>Main Dishes</h3>
             </div>
             <div class="row gy-5" id="menu-container-breakfast">
-    
+
             </div>
           </div><!-- End Breakfast Menu Content -->
-    
+
           <div class="tab-pane fade" id="menu-lunch" role="tabpanel">
-    
-            <div class="tab-header text-center">
-              <p>قائمة</p>
-              <h3>العروض الخاصة</h3>
+
+            <div class="tab-header text-center" id="menu-specials">
+              <p>Menu</p>
+              <h3>Specials</h3>
             </div>
-            <div class="row gy-5" id="menu-container-lunch">
-    
+            <div class="row gy-5" id="menu-container-breakfast">
+
             </div>
-          </div><!-- End Lunch Menu Content -->
-    
-          <div class="tab-pane fade" id="menu-dinner">
-    
-            <div class="tab-header text-center" style="padding: 30px 0px;">
-              <p style="font-size: 14px; text-transform: uppercase; color: #676775; margin-bottom: 0;">قائمة</p>
-              <h3 style="font-size: 36px; font-weight: 600; color: var(--color-primary);">المشروبات والحلويات</h3>
-            </div>
-            <div class="row gy-5" id="menu-container-dinner">
-    
-            </div>
-          </div><!-- End Dinner Menu Content -->
-    
+          </div>
+        </div><!-- End Lunch Menu Content -->
+
+        <div class="tab-pane fade" id="menu-dinner">
+
+          <div class="tab-header text-center" style="padding: 30px 0px;" id="menu-drinks">
+            <p style="font-size: 14px; text-transform: uppercase; color: #676775; margin-bottom: 0;">
+              Menu</p>
+            <h3 style="font-size: 36px; font-weight: 600; color: var(--color-primary);">Drinks & Dessert</h3>
+          </div>
+          <div class="row gy-5" id="menu-container-breakfast">
+
+          </div>
         </div>
+      </div><!-- End Dinner Menu Content -->
       </div>
-    </section>
-    <!-- End Menu Section -->
+
+
+
+
+
+
+    </section><!-- End Menu Section -->
 
     <!-- ======= Testimonials Section ======= -->
     <section id="testimonial-section" class="testimonials section-bg">
       <div class="container" data-aos="fade-up">
-    
+
         <div class="section-header" id="Testimonials">
-          <h2>التوصيات</h2>
-          <p style="font-family: ArabicUIDisplayUltraLight;">ماذا يقولون <span>عنا</span></p>
+          <h2>Testimonials</h2>
+          <p>What Are They <span>Saying About Us</span></p>
         </div>
-    
+
         <div class="slides-1 swiper" data-aos="fade-up" data-aos-delay="100">
           <div class="swiper-wrapper">
-    
-            <div class="swiper-slide" style="text-align: right;" dir="rtl">
+
+            <div class="swiper-slide">
               <div class="testimonial-item">
                 <div class="row gy-4 justify-content-center">
                   <a class="col-lg-6" href="https://g.co/kgs/Q46MkJ" target="_blank">
                     <div class="testimonial-content">
                       <p>
-                        <i class="bi bi-quote quote-icon-right"></i>
-                        <p>أفضل أطعمة البحر التي جربتها في حياتي. الأخطبوط لذيذ وطري والأطعمة البحرية الأخرى رائعة. الإطلالة والهدوء كانا مثاليين. تجربة رائعة.</p>
                         <i class="bi bi-quote quote-icon-left"></i>
+                        <span id="testimo-1-content">The best seafood that I’ve tried in my life. The octopus is so delicious and soft and
+                        the other seafood was great . The view and the silence was on point too 👌🏻 Best experience.</span>
+                        <i class="bi bi-quote quote-icon-right"></i>
                       </p>
-                      <h3>يوسف بن شقرون</h3>
-                      <h4>مرشد محلي</h4>
+                      <h3 id="testimo-1-name">Youssef Benchekroun</h3>
+                      <h4 id="testimo-1-position">Local Guide</h4>
                       <div class="stars">
                         <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                           class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                       </div>
                     </div>
                   </a>
+
                 </div>
               </div>
             </div><!-- End testimonial item -->
-    
-            <div class="swiper-slide" style="text-align: right;" dir="rtl">
+
+            <div class="swiper-slide">
               <div class="testimonial-item">
                 <div class="row gy-4 justify-content-center">
                   <a class="col-lg-6" href="https://g.co/kgs/8x8ef3" target="_blank">
                     <div class="testimonial-content">
                       <p>
-                        <i class="bi bi-quote quote-icon-right"></i>
-                        <p>الأخطبوط رائع، أنا أحبه</p>
                         <i class="bi bi-quote quote-icon-left"></i>
+                        <p id="testimo-2-content">Le poulpe est magnifique, j'adore</p>
+                        <i class="bi bi-quote quote-icon-right"></i>
                       </p>
-                      <h3>رضا الفلالي</h3>
-                      <h4>مرشد محلي</h4>
+                      <h3 id="testimo-2-name">Reda EL FILLALI</h3>
+                      <h4 id="testimo-2-position">Guide Local</h4>
                       <div class="stars">
                         <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                           class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                       </div>
                     </div>
                   </a>
+
                 </div>
               </div>
             </div><!-- End testimonial item -->
-    
-            <div class="swiper-slide" style="text-align: right;" dir="rtl">
+
+            <div class="swiper-slide">
               <div class="testimonial-item">
                 <div class="row gy-4 justify-content-center">
                   <a class="col-lg-6" href="https://g.co/kgs/k1x5wR" target="_blank">
                     <div class="testimonial-content">
                       <p>
-                        <i class="bi bi-quote quote-icon-right"></i>
-                        <p>ممتاز! فقط غالٍ قليلاً ولكنه يستحق ثمنه.</p>
                         <i class="bi bi-quote quote-icon-left"></i>
+                        Excellent ! Juste un peu chère
+                        Mais ça vaut son prix
+                        <i class="bi bi-quote quote-icon-right"></i>
                       </p>
-                      <h3>جين</h3>
-                      <h4>زبون محلي</h4>
+                      <h3 id="testimo-3-name">Jeanne</h3>
+                      <h4 id="testimo-3-position">Local customer</h4>
                       <div class="stars">
                         <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                           class="bi bi-star-fill"></i><i class="bi bi-star"></i>
                       </div>
                     </div>
                   </a>
+
                 </div>
               </div>
             </div><!-- End testimonial item -->
-    
-            <div class="swiper-slide" style="text-align: right;" dir="rtl">
+
+            <div class="swiper-slide">
               <div class="testimonial-item">
                 <div class="row gy-4 justify-content-center">
                   <a class="col-lg-6" href="https://g.co/kgs/yLaU3y" target="_blank">
                     <div class="testimonial-content">
                       <p>
-                        <i class="bi bi-quote quote-icon-right"></i>
-                        <p>أفضل مزيج بين الطعام والإطلالة، كانت مذهلة.</p>
                         <i class="bi bi-quote quote-icon-left"></i>
+                        <p id="testimo-4-content">The best of both worlds! Food and the view were amazing.</p>
+                        <i class="bi bi-quote quote-icon-right"></i>
                       </p>
-                      <h3>سهام روي</h3>
-                      <h4>مرشد محلي</h4>
+                      <h3 id="testimo-4-name">Siham Roy</h3>
+                      <h4 id="testimo-4-position">Local guide</h4>
                       <div class="stars">
                         <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                           class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                       </div>
                     </div>
                   </a>
+
                 </div>
               </div>
             </div><!-- End testimonial item -->
-    
+
           </div>
           <div class="swiper-pagination"></div>
         </div>
-    
+
       </div>
-    </section>
-    <!-- End Testimonials Section -->
+    </section><!-- End Testimonials Section -->
 
     <!-- ======= Events Section ======= -->
     <section id="events" class="events">
       <div class="container-fluid" data-aos="fade-up">
-    
+
         <div class="section-header" id="Events-section">
-          <h2>الأحداث</h2>
-          <p style="font-family: ArabicUIDisplayUltraLight;">شارك <span>لحظاتك</span> في مطعمنا</p>
+          <h2>Events</h2>
+          <p>Share <span>Your Moments</span> In Our Restaurant</p>
         </div>
-    
+
         <div class="slides-3 swiper" data-aos="fade-up" data-aos-delay="100">
           <div class="swiper-wrapper">
-    
+
             <div class="swiper-slide event-item d-flex flex-column justify-content-end"
               style="background-image: url(assets/img/events-1.jpg)">
-              <h3>حفلات مخصصة</h3>
-              <div class="price align-self-start">$99</div>
-              <p class="description">
-                انتقل المفهوم من الجملة القصيرة إلى هنا
+              <h3 id="event-1-name">Custom Parties</h3>
+              <div class="price align-self-start" id="event-1-price">$99</div>
+              <p class="description" id="event-1-description">
+                Quo corporis voluptas ea ad. Consectetur inventore sapiente ipsum voluptas eos omnis facere. Enim
+                facilis veritatis id est rem repudiandae nulla expedita quas.
               </p>
             </div><!-- End Event item -->
-    
+
             <div class="swiper-slide event-item d-flex flex-column justify-content-end"
               style="background-image: url(assets/img/events-2.jpg)">
-              <h3>حفلات خاصة</h3>
-              <div class="price align-self-start">$289</div>
-              <p class="description">
-                انتقل المفهوم من الجملة القصيرة إلى هنا
+              <h3 id="event-2-name">Private Parties</h3>
+              <div class="price align-self-start" id="event-2-price">$289</div>
+              <p class="description" id="event-2-description">
+                In delectus sint qui et enim. Et ab repudiandae inventore quaerat doloribus. Facere nemo vero est ut
+                dolores ea assumenda et. Delectus saepe accusamus aspernatur.
               </p>
             </div><!-- End Event item -->
-    
+
             <div class="swiper-slide event-item d-flex flex-column justify-content-end"
               style="background-image: url(assets/img/events-3.jpg)">
-              <h3>حفلات عيد الميلاد</h3>
-              <div class="price align-self-start">$499</div>
-              <p class="description">
-                انتقل المفهوم من الجملة القصيرة إلى هنا
+              <h3 id="event-3-name">Birthday Parties</h3>
+              <div class="price align-self-start" id="event-3-price">$499</div>
+              <p class="description" id="event-3-description">
+                Laborum aperiam atque omnis minus omnis est qui assumenda quos. Quis id sit quibusdam. Esse quisquam
+                ducimus officia ipsum ut quibusdam maxime. Non enim perspiciatis.
               </p>
             </div><!-- End Event item -->
-    
+
           </div>
           <div class="swiper-pagination"></div>
         </div>
-    
+
       </div>
-    </section>
-    <!-- End Events Section -->
+    </section><!-- End Events Section -->
 
     <!-- ======= Chefs Section ======= -->
     <section id="chefs" class="chefs section-bg">
       <div class="container" data-aos="fade-up">
-    
+
         <div class="section-header" id="chefs-header">
-          <h2>الطهاة</h2>
-          <p style="font-family: ArabicUIDisplayUltraLight;">الطهاة <span>المحترفين</span> لدينا</p>
+          <h2>Chefs</h2>
+          <p>Our <span>Proffesional</span> Chefs</p>
         </div>
-    
+
         <div class="row gy-4">
-    
+
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
             <div class="chef-member">
               <div class="member-img">
@@ -631,14 +661,15 @@
                   <a href=""><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-info">
-                <h4>والتر وايت</h4>
-                <span>طاهٍ رئيسي</span>
-                <p>تم تغيير المفهوم من الجملة القصيرة إلى هنا</p>
+              <div class="member-info" id="chef1">
+                <h4>Walter White</h4>
+                <span>Master Chef</span>
+                <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum
+                  exercitationem iure minima enim corporis et voluptate.</p>
               </div>
             </div>
           </div><!-- End Chefs Member -->
-    
+
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
             <div class="chef-member">
               <div class="member-img">
@@ -650,14 +681,15 @@
                   <a href=""><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-info">
-                <h4>سارة جونسون</h4>
-                <span>حلواني</span>
-                <p>تم تغيير المفهوم من الجملة القصيرة إلى هنا</p>
+              <div class="member-info" id="chef1">
+                <h4>Sarah Jhonson</h4>
+                <span>Patissier</span>
+                <p>Quo esse repellendus quia id. Est eum et accusantium pariatur fugit nihil minima suscipit corporis.
+                  Voluptate sed quas reiciendis animi neque sapiente.</p>
               </div>
             </div>
           </div><!-- End Chefs Member -->
-    
+
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
             <div class="chef-member">
               <div class="member-img">
@@ -669,72 +701,140 @@
                   <a href=""><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
-              <div class="member-info">
-                <h4>ويليام أندرسون</h4>
-                <span>طاهٍ</span>
-                <p>تم تغيير المفهوم من الجملة القصيرة إلى هنا</p>
+              <div class="member-info" id="chef1">
+                <h4>William Anderson</h4>
+                <span>Cook</span>
+                <p>Vero omnis enim consequatur. Voluptas consectetur unde qui molestiae deserunt. Voluptates enim aut
+                  architecto porro aspernatur molestiae modi.</p>
               </div>
             </div>
           </div><!-- End Chefs Member -->
-    
+
         </div>
-    
+
       </div>
-    </section>
-    <!-- End Chefs Section -->
+    </section><!-- End Chefs Section -->
+
+    <!-- ======= Book A Table Section ======= -->
+    <!-- <section id="book-a-table" class="book-a-table">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Book A Table</h2>
+          <p>Book <span>Your Stay</span> With Us</p>
+        </div>
+
+        <div class="row g-0">
+
+          <div class="col-lg-4 reservation-img" style="background-image: url(assets/img/reservation.jpg);"
+            data-aos="zoom-out" data-aos-delay="200"></div>
+
+          <div class="col-lg-8 d-flex align-items-center reservation-form-bg">
+            <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form" data-aos="fade-up"
+              data-aos-delay="100">
+              <div class="row gy-4">
+                <div class="col-lg-4 col-md-6">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+                    data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                  <div class="validate"></div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                    data-rule="email" data-msg="Please enter a valid email">
+                  <div class="validate"></div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone"
+                    data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                  <div class="validate"></div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <input type="text" name="date" class="form-control" id="date" placeholder="Date" data-rule="minlen:4"
+                    data-msg="Please enter at least 4 chars">
+                  <div class="validate"></div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <input type="text" class="form-control" name="time" id="time" placeholder="Time" data-rule="minlen:4"
+                    data-msg="Please enter at least 4 chars">
+                  <div class="validate"></div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <input type="number" class="form-control" name="people" id="people" placeholder="# of people"
+                    data-rule="minlen:1" data-msg="Please enter at least 1 chars">
+                  <div class="validate"></div>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
+                <div class="validate"></div>
+              </div>
+              <div class="mb-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm
+                  your reservation. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Book a Table</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section> -->
+    <!-- End Book A Table Section -->
 
     <!-- ======= Gallery Section ======= -->
-   <section id="gallery" class="gallery section-bg" style="background-color: white;">
-  <div class="container" data-aos="fade-up">
+    <section id="gallery" class="gallery section-bg" style="background-color: white;">
+      <div class="container" data-aos="fade-up">
 
-    <div class="section-header" id="gallery-header">
-      <h2>معرض الصور</h2>
-      <p style="font-family: ArabicUIDisplayUltraLight;">تفقد <span>معرض الصور</span> لدينا</p>
-    </div>
+        <div class="section-header" id="gallery-header">
+          <h2>gallery</h2>
+          <p>Check <span>Our Gallery</span></p>
+        </div>
 
-    <div class="gallery-slider swiper">
-      <div class="swiper-wrapper align-items-center">
-        <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-            href="assets/img/gallery/gallery-1.jpg"><img src="assets/img/gallery/gallery-1.jpg" class="img-fluid"
-              alt=""></a></div>
-        <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-            href="assets/img/gallery/gallery-2.jpg"><img src="assets/img/gallery/gallery-2.jpg" class="img-fluid"
-              alt=""></a></div>
-        <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-            href="assets/img/gallery/gallery-3.jpg"><img src="assets/img/gallery/gallery-3.jpg" class="img-fluid"
-              alt=""></a></div>
-        <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-            href="assets/img/gallery/gallery-4.jpg"><img src="assets/img/gallery/gallery-4.jpg" class="img-fluid"
-              alt=""></a></div>
-        <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-            href="assets/img/gallery/gallery-5.jpg"><img src="assets/img/gallery/gallery-5.jpg" class="img-fluid"
-              alt=""></a></div>
-        <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-            href="assets/img/gallery/gallery-6.jpg"><img src="assets/img/gallery/gallery-6.jpg" class="img-fluid"
-              alt=""></a></div>
-        <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-            href="assets/img/gallery/gallery-7.jpg"><img src="assets/img/gallery/gallery-7.jpg" class="img-fluid"
-              alt=""></a></div>
-        <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-            href="assets/img/gallery/gallery-8.jpg"><img src="assets/img/gallery/gallery-8.jpg" class="img-fluid"
-              alt=""></a></div>
+        <div class="gallery-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
+                href="assets/img/gallery/gallery-1.jpg"><img src="assets/img/gallery/gallery-1.jpg" class="img-fluid"
+                  alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
+                href="assets/img/gallery/gallery-2.jpg"><img src="assets/img/gallery/gallery-2.jpg" class="img-fluid"
+                  alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
+                href="assets/img/gallery/gallery-3.jpg"><img src="assets/img/gallery/gallery-3.jpg" class="img-fluid"
+                  alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
+                href="assets/img/gallery/gallery-4.jpg"><img src="assets/img/gallery/gallery-4.jpg" class="img-fluid"
+                  alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
+                href="assets/img/gallery/gallery-5.jpg"><img src="assets/img/gallery/gallery-5.jpg" class="img-fluid"
+                  alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
+                href="assets/img/gallery/gallery-6.jpg"><img src="assets/img/gallery/gallery-6.jpg" class="img-fluid"
+                  alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
+                href="assets/img/gallery/gallery-7.jpg"><img src="assets/img/gallery/gallery-7.jpg" class="img-fluid"
+                  alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
+                href="assets/img/gallery/gallery-8.jpg"><img src="assets/img/gallery/gallery-8.jpg" class="img-fluid"
+                  alt=""></a></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
       </div>
-      <div class="swiper-pagination"></div>
-    </div>
-
-  </div>
-</section>
-<!-- End Gallery Section -->
+    </section><!-- End Gallery Section -->
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact" style="background-color: #eee;">
       <div class="container" data-aos="fade-up">
-    
+
         <div class="section-header" id="contact-header">
-          <h2>اتصل بنا</h2>
-          <p style="font-family: ArabicUIDisplayUltraLight;">هل تحتاج للمساعدة؟ <span>اتصل بنا</span></p>
+          <h2>Contact</h2>
+          <p>Need Help? <span>Contact Us</span></p>
         </div>
-    
+
         <div class="mb-3">
           <iframe style="border:0; width: 100%; height: 350px;"
             src="
@@ -748,100 +848,122 @@
             <a class="info-item  d-flex align-items-center" style="justify-content: right;background-color: white;"  target="_blank"
               href="https://www.google.com/maps/place/%D9%85%D8%B7%D8%B9%D9%85+%D8%A7%D9%84%D8%A3%D8%AE%D8%B7%D8%A8%D9%88%D8%B7%E2%80%AD/@35.6696073,-5.4614031,10.57z/data=!4m19!1m12!4m11!1m3!2m2!1d-5.2140813!2d35.551069!1m6!1m2!1s0xd0b48b29d20fb8f:0x76d3c075194e388b!2z2YXYt9i52YUg2KfZhNij2K7Yt9io2YjYt9iMINis2YXYp9i52Kkg2LLYp9mI2YrYqSDYs9mK2K_ZiiDZgtin2LPZhSjYo9mF2LPYpyDYqti32YjYp9mGKSDYtNin2LfYpiDYo9mF2LPYpyBqYW1hYXQgemFvdWlhdCBzaWRpIGthY2Vt2IwgdGV0b3VhbiA5MzAwMA!2m2!1d-5.216074!2d35.538796!3m5!1s0xd0b48b29d20fb8f:0x76d3c075194e388b!8m2!3d35.538796!4d-5.216074!16s%2Fg%2F11bwyw631g?entry=ttu">
 
-              <div id="address">
-                <h3 style="text-align: right;">العنوان</h3>
-                <p>شارع آدم ، نيويورك ، نيويورك 535022</p>
+              <div id="Adress">
+                <h3 style="text-align: right;">Adress</h3>
+                <p>A108 Adam Street, New York, NY 535022</p>
               </div>
               <i class="icon bi bi-map flex-shrink-0"></i>
             </a>
           </div><!-- End Info Item -->
-    
-          <div class="col-md-6">
-            <a class="info-item d-flex align-items-center" href="mailto:amhotyassir@hotmail.com"
-              style="background-color: white; justify-content: right;">
-    
+
+          <div class="col-md-6" >
+            <a class="info-item d-flex align-items-center" href="mailto:amhotyassir@hotmail.com" style="background-color: white; justify-content: right;">
+              
               <div id="emailus">
-                <h3 style="text-align: right;">راسلنا</h3>
+                <h3 style="text-align: right;">Email Us</h3>
                 <p>contact@example.com</p>
               </div>
               <i class="icon bi bi-envelope flex-shrink-0"></i>
             </a>
           </div><!-- End Info Item -->
-    
+
           <div class="col-md-6">
-            <a class="info-item  d-flex align-items-center" href="tel:+212661110860"
-              style="justify-content: right;background-color: white;">
-    
+            <a class="info-item  d-flex align-items-center" href="tel:+212618902632" style="justify-content: right;background-color: white;">
+              
               <div id="callus">
-                <h3 style="text-align: right;">اتصل بنا</h3>
-                <p>+212 6611-10860</p>
+                <h3 style="text-align: right;">Call Us</h3>
+                <p>+212 6189-02632</p>
               </div>
               <i class="icon bi bi-telephone flex-shrink-0"></i>
             </a>
           </div><!-- End Info Item -->
-    
+
           <div class="col-md-6">
             <a class="info-item  d-flex align-items-center" style="justify-content: right;background-color: white;">
-    
-              <div id="opening-hours">
-                <h3 style="text-align: right;">ساعات العمل</h3>
-                <div><strong>الاثنين - السبت:</strong> 11 صباحًا - 11 مساءً؛
-                  <strong>الأحد:</strong> مغلق
+              
+              <div id="Opening-hours">
+                <h3 style="text-align: right;">Opening Hours</h3>
+                <div><strong>Mon-Sat:</strong> 11AM - 23PM;
+                  <strong>Sunday:</strong> Closed
                 </div>
               </div>
               <i class="icon bi bi-share flex-shrink-0"></i>
             </a>
           </div><!-- End Info Item -->
-    
+
         </div>
-    
+
+        <!-- <form action="forms/contact.php" method="post" role="form" class="php-email-form p-3 p-md-4">
+          <div class="row">
+            <div class="col-xl-6 form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="col-xl-6 form-group">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+          </div>
+          <div class="my-3">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your message has been sent. Thank you!</div>
+          </div>
+          <div class="text-center"><button type="submit">Send Message</button></div>
+        </form> -->
+        <!--End Contact Form -->
+
       </div>
     </section>
-    
     <!-- End Contact Section -->
 
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <footer id="footer" class="footer" style="text-align: right;">
+  <footer id="footer" class="footer">
+
     <div class="container">
-      <div class="row gy-3" style=" flex-direction: row-reverse;">
-        <div class="col-lg-3 col-md-6 d-flex" style=" flex-direction: row-reverse;">
-          <i class="bi bi-geo-alt icon" style="margin-right: 0px; margin-left: 15px;"></i>
-          <div id="footer-address">
-            <h4>العنوان</h4>
+      <div class="row gy-3">
+        <div class="col-lg-3 col-md-6 d-flex">
+          <i class="bi bi-geo-alt icon"></i>
+          <div id="footer-adress">
+            <h4>Address</h4>
             <p>
-              شارع آدم <br>
-              نيويورك ، نيويورك 535022 - الولايات المتحدة<br>
+              A108 Adam Street <br>
+              New York, NY 535022 - US<br>
             </p>
           </div>
-    
+
         </div>
-    
-        <div class="col-lg-3 col-md-6 footer-links d-flex" style=" flex-direction: row-reverse;">
-          <i class="bi bi-telephone icon" style="margin-right: 0px; margin-left: 15px;"></i>
+
+        <div class="col-lg-3 col-md-6 footer-links d-flex">
+          <i class="bi bi-telephone icon"></i>
           <div id="footer-reservations">
-            <h4>الحجوزات</h4>
+            <h4>Reservations</h4>
             <p>
-              <strong><span style="color: white;" dir="ltr">+212 661110860</span> :الهاتف</strong> <br>
-              <strong>: البريد الإلكتروني</strong> info@example.com<br>
+              <strong>Phone:</strong> +212 6611-10860<br>
+              <strong>Email:</strong> info@example.com<br>
             </p>
           </div>
         </div>
-    
-        <div class="col-lg-3 col-md-6 footer-links d-flex" style=" flex-direction: row-reverse;">
-          <i class="bi bi-clock icon" style="margin-right: 0px; margin-left: 15px;"></i>
+
+        <div class="col-lg-3 col-md-6 footer-links d-flex">
+          <i class="bi bi-clock icon"></i>
           <div id="footer-opening">
-            <h4>ساعات العمل</h4>
+            <h4>Opening Hours</h4>
             <p>
-              <strong>الاثنين - السبت:</strong> 11 صباحًا - 11 مساءً<br>
-              الأحد: مغلق
+              <strong>Mon-Sat: 11AM</strong> - 23PM<br>
+              Sunday: Closed
             </p>
           </div>
         </div>
-    
-        <div class="col-lg-3 col-md-6 footer-links" dir="rtl">
-          <h4 id="follow-us">تابعنا</h4>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4 id="follow-us">Follow Us</h4>
           <div class="social-links d-flex">
             <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
             <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
@@ -849,10 +971,10 @@
             <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
           </div>
         </div>
-    
+
       </div>
     </div>
-    
+
 
 
   </footer><!-- End Footer -->
