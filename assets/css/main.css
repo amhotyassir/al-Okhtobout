@@ -1358,6 +1358,7 @@ section {
   background: var(--color-primary);
   border-radius: 50%;
   margin-left: 15px;
+  margin-right: 15px;
 }
 
 .contact .info-item h3 {
