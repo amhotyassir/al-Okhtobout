@@ -97,8 +97,10 @@ function changeLanguage(lang) {
       var menuData = snapshot.val()
       console.log(menuData.Poissons)
       // Call a function to create menu elements using the retrieved data
-      createMenuElements(menuData.Poissons, 'starters');
-      createMenuElements(menuData.Boissons, 'breakfast');
+      createMenuElements(menuData.Poissons, 'breakfast');
+      createMenuElements(menuData.Boissons, 'dinner');
+      createMenuElements(menuData.entrees, 'starters');
+      createMenuElements(menuData.specials, 'lunch');
     });
 
     // Function to create menu elements
@@ -107,7 +109,9 @@ function changeLanguage(lang) {
       for (var dishKey in menuData) {
         if (menuData.hasOwnProperty(dishKey)) {
           var dish = menuData[dishKey];
-
+          if (dish.exist){
+          
+          
           // Create HTML elements using the dish data
           var dishElement = document.createElement("div");
           dishElement.classList.add("col-lg-4", "menu-item"); // Add the desired classes to the dishElement
@@ -128,18 +132,20 @@ function changeLanguage(lang) {
 
           var dishIngredientsElement = document.createElement("p");
           dishIngredientsElement.classList.add("ingredients");
-          dishIngredientsElement.innerText = dish.chefs;
+          dishIngredientsElement.innerText = dish.ingredients;
           dishElement.appendChild(dishIngredientsElement);
 
           var dishPriceElement = document.createElement("p");
           dishPriceElement.classList.add("price");
-          dishPriceElement.innerText = "$" + dish.unitPrice;
+          dishPriceElement.innerText =dish.unitPrice + " د.م. " ;
+          dishPriceElement.dir='rtl'
           dishElement.appendChild(dishPriceElement);
 
           // Append the dish element to the menu container in your HTML
           var menuContainer = document.getElementById("menu-container-" + str);
           menuContainer.appendChild(dishElement);
         }
+      }
       }
     }
   </script>
@@ -160,8 +166,8 @@ function changeLanguage(lang) {
                 <li><a href="#hero" id="Home">الرئيسية</a></li>
                 <li><a href="#about" id="About">حول</a></li>
                 <li><a href="#menu" id="Menu">القائمة</a></li>
-                <li><a href="#events" id="Events">الأحداث</a></li>
-                <li><a href="#chefs" id="Chefs">الطهاة</a></li>
+                <!-- <li><a href="#events" id="Events">الأحداث</a></li>
+                <li><a href="#chefs" id="Chefs">الطهاة</a></li> -->
                 <li><a href="#gallery" id="Gallery">الصور</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropbtn"><span id="Language"><i class="bi bi-globe"></i> Language</span> <i
@@ -228,7 +234,7 @@ function changeLanguage(lang) {
         </div>
     
         <div class="row gy-4">
-          <div class="col-lg-7 position-relative about-img" style="background-image: url(assets/img/about.jpg);"
+          <div class="col-lg-7 position-relative about-img" style="background-image: url(assets/img/about.png);background-size: cover;"
             data-aos="fade-up" data-aos-delay="150">
             <div class="call-us position-absolute">
               <h4 id="Book-a-table2">احجز الآن</h4>
@@ -252,7 +258,7 @@ function changeLanguage(lang) {
               </p>
     
               <div class="position-relative mt-4">
-                <img src="assets/img/about-2.jpg" class="img-fluid" alt="">
+                <img src="assets/img/about-2.png" class="img-fluid" alt="">
                 <a href="https://www.youtube.com/watch?v=Z7djF0fORU4" class="glightbox play-btn"></a>
               </div>
             </div>
@@ -344,7 +350,7 @@ function changeLanguage(lang) {
     
           <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1"
+              <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1"
                 class="purecounter"></span>
               <p>ساعات في اليوم</p>
             </div>
@@ -562,7 +568,7 @@ function changeLanguage(lang) {
     <!-- End Testimonials Section -->
 
     <!-- ======= Events Section ======= -->
-    <section id="events" class="events">
+    <!-- <section id="events" class="events">
       <div class="container-fluid" data-aos="fade-up">
     
         <div class="section-header" id="Events-section">
@@ -580,7 +586,7 @@ function changeLanguage(lang) {
               <p class="description">
                 انتقل المفهوم من الجملة القصيرة إلى هنا
               </p>
-            </div><!-- End Event item -->
+            </div>
     
             <div class="swiper-slide event-item d-flex flex-column justify-content-end"
               style="background-image: url(assets/img/events-2.jpg)">
@@ -589,7 +595,7 @@ function changeLanguage(lang) {
               <p class="description">
                 انتقل المفهوم من الجملة القصيرة إلى هنا
               </p>
-            </div><!-- End Event item -->
+            </div>
     
             <div class="swiper-slide event-item d-flex flex-column justify-content-end"
               style="background-image: url(assets/img/events-3.jpg)">
@@ -598,18 +604,18 @@ function changeLanguage(lang) {
               <p class="description">
                 انتقل المفهوم من الجملة القصيرة إلى هنا
               </p>
-            </div><!-- End Event item -->
+            </div>
     
           </div>
           <div class="swiper-pagination"></div>
         </div>
     
       </div>
-    </section>
+    </section> -->
     <!-- End Events Section -->
 
     <!-- ======= Chefs Section ======= -->
-    <section id="chefs" class="chefs section-bg">
+    <!-- <section id="chefs" class="chefs section-bg">
       <div class="container" data-aos="fade-up">
     
         <div class="section-header" id="chefs-header">
@@ -636,7 +642,7 @@ function changeLanguage(lang) {
                 <p>تم تغيير المفهوم من الجملة القصيرة إلى هنا</p>
               </div>
             </div>
-          </div><!-- End Chefs Member -->
+          </div>
     
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
             <div class="chef-member">
@@ -655,7 +661,7 @@ function changeLanguage(lang) {
                 <p>تم تغيير المفهوم من الجملة القصيرة إلى هنا</p>
               </div>
             </div>
-          </div><!-- End Chefs Member -->
+          </div>
     
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
             <div class="chef-member">
@@ -674,12 +680,12 @@ function changeLanguage(lang) {
                 <p>تم تغيير المفهوم من الجملة القصيرة إلى هنا</p>
               </div>
             </div>
-          </div><!-- End Chefs Member -->
+          </div>
     
         </div>
     
       </div>
-    </section>
+    </section> -->
     <!-- End Chefs Section -->
 
     <!-- ======= Gallery Section ======= -->
@@ -687,7 +693,7 @@ function changeLanguage(lang) {
   <div class="container" data-aos="fade-up">
 
     <div class="section-header" id="gallery-header">
-      <h2>معرض الصور</h2>
+      <h2>صور الزبناء</h2>
       <p style="font-family: ArabicUIDisplayUltraLight;">تفقد <span>معرض الصور</span> لدينا</p>
     </div>
 
@@ -697,22 +703,22 @@ function changeLanguage(lang) {
             href="assets/img/gallery/gallery-1.jpg"><img src="assets/img/gallery/gallery-1.jpg" class="img-fluid"
               alt=""></a></div>
         <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-            href="assets/img/gallery/gallery-2.jpg"><img src="assets/img/gallery/gallery-2.jpg" class="img-fluid"
+            href="assets/img/gallery/gallery-2.png"><img src="assets/img/gallery/gallery-2.png" class="img-fluid"
               alt=""></a></div>
         <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-            href="assets/img/gallery/gallery-3.jpg"><img src="assets/img/gallery/gallery-3.jpg" class="img-fluid"
+            href="assets/img/gallery/gallery-3.png"><img src="assets/img/gallery/gallery-3.png" class="img-fluid"
               alt=""></a></div>
         <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-            href="assets/img/gallery/gallery-4.jpg"><img src="assets/img/gallery/gallery-4.jpg" class="img-fluid"
+            href="assets/img/gallery/gallery-4.png"><img src="assets/img/gallery/gallery-4.png" class="img-fluid"
               alt=""></a></div>
         <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-            href="assets/img/gallery/gallery-5.jpg"><img src="assets/img/gallery/gallery-5.jpg" class="img-fluid"
+            href="assets/img/gallery/gallery-5.png"><img src="assets/img/gallery/gallery-5.png" class="img-fluid"
               alt=""></a></div>
         <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-            href="assets/img/gallery/gallery-6.jpg"><img src="assets/img/gallery/gallery-6.jpg" class="img-fluid"
+            href="assets/img/gallery/gallery-6.png"><img src="assets/img/gallery/gallery-6.png" class="img-fluid"
               alt=""></a></div>
         <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-            href="assets/img/gallery/gallery-7.jpg"><img src="assets/img/gallery/gallery-7.jpg" class="img-fluid"
+            href="assets/img/gallery/gallery-7.png"><img src="assets/img/gallery/gallery-7.png" class="img-fluid"
               alt=""></a></div>
         <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
             href="assets/img/gallery/gallery-8.jpg"><img src="assets/img/gallery/gallery-8.jpg" class="img-fluid"
@@ -749,7 +755,7 @@ function changeLanguage(lang) {
 
               <div id="address">
                 <h3 style="text-align: right;">العنوان</h3>
-                <p>كورنيش أمسا - طريق واد لو</p>
+                <p>  مطعم الأخطبوط - شاطئ أمسا </p>
               </div>
               <i class="icon bi bi-map flex-shrink-0"></i>
             </a>
@@ -784,7 +790,7 @@ function changeLanguage(lang) {
     
               <div id="opening-hours">
                 <h3 style="text-align: right;">ساعات العمل</h3>
-                <div><strong>كل أيام الأسبوع : </strong> 12 ظهرا ء 12 ليلا
+                <div><strong>كل أيام الأسبوع : </strong> 12 ظهرا - 12 ليلا
                   
                 </div>
               </div>
@@ -809,7 +815,7 @@ function changeLanguage(lang) {
           <i class="bi bi-geo-alt icon" style="margin-right: 0px; margin-left: 15px;"></i>
           <div id="footer-address">
             <h4>العنوان</h4>
-            <p>كورنيش أمسا - طريق واد لو</p>
+            <p>مطعم الأخطبوط - كورنيش أمسا </p>
           </div>
     
         </div>
@@ -840,8 +846,8 @@ function changeLanguage(lang) {
           <h4 id="follow-us">تابعنا</h4>
           <div class="social-links d-flex">
             <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="youtube"><i class="bi bi-youtube"></i></a>
+            <a href="https://www.instagram.com/alokhtobout.restaurant/" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UCHB9Cmdf6GazlgGdN9CK_bw/" class="youtube"><i class="bi bi-youtube"></i></a>
           </div>
         </div>
     
